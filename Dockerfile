@@ -1,7 +1,7 @@
 FROM cm2network/steamcmd:root
 LABEL maintainer="seepine@outlook.com"
 ENV STEAMAPPID=2394010 \
-    STEAMAPPRUN=/home/steam/Steam/steamapps/common/PalServer/PalServer.sh -useperfthreads -NoAsyncLoadingThread -UseMultithreadForDS
+    STEAMAPPRUN="/home/steam/Steam/steamapps/common/PalServer/PalServer.sh -useperfthreads -NoAsyncLoadingThread -UseMultithreadForDS"
 COPY etc/entry.sh ${HOMEDIR}
 RUN set -x \
     && chmod 755 "${HOMEDIR}/entry.sh" \
