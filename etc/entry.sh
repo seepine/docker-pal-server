@@ -3,4 +3,4 @@ echo "Loading Steam Release Branch"
     +login anonymous \
     +app_update "${STEAMAPPID}" \
     +quit
-"${STEAMAPPRUN}"
+${STEAMAPPRUN}
